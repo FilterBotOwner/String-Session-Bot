@@ -7,20 +7,22 @@ nᴜꜱᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛ
 
 <blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></blockquote></b>"""
 
-  LOG = """#New_User
+  LOG = """👁️‍🗨️ 𝘜𝘚𝘌𝘙 𝘋𝘌𝘛𝘈𝘐𝘓𝘚
 
-User: {}
-ID: {}"""
-  
-  ABOUT = """<b>📜 Cʜᴇᴄᴋ Aʙᴏᴜᴛ:
-  
-Lɪʙʀᴀʀʏ: Pʏʀᴏɢʀᴀᴍ 📚
-Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 🐍
-Sᴇʀᴠᴇʀ: Rᴇɴᴅᴇʀ 🌐
-Bᴜɪʟᴅ Sᴛᴀᴛᴜs: V1.3 🚀
-Sᴏᴜʀᴄᴇ Cᴏᴅᴇ: Aᴠᴀɪʟᴀʙʟᴇ (Fʀᴇᴇ) 💻 
+○ 𝘐𝘋 : <code>{}</code>
+○ 𝘋𝘊 : {}
+○ 𝘍𝘪𝘳𝘴𝘵 𝘕𝘢𝘮𝘦 : {}
+○ 𝘜𝘴𝘦𝘳𝘕𝘢𝘮𝘦 : {}
 
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></blockquote></b>"""
+𝘉𝘺 = @{}"""
+  
+  ABOUT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://youtube.com/@techifybots'>sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ</a>
+‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
+‣ ᴅᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a>
+‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
+‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://www.koyeb.com/'>ᴋᴏʏᴇʙ</a>
+‣ ᴄʀᴇᴀᴛᴇᴅ ʙʏ : <a href='https://telegram.me/callownerbot'>ʀᴀʜᴜʟ</a></b>"""
+
   
   HELP = """<b>{},
 
