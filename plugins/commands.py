@@ -12,23 +12,39 @@ def parse_button_markup(text: str):
     lines = text.split("\n")
     buttons = []
     final_text_lines = []
-
     for line in lines:
-        match = re.fullmatch(r"\[(.+?)\]\((https?://[^\s]+)\)", line.strip())
-        if match:
-            buttons.append([InlineKeyboardButton(match[1], url=match[2])])
+        row = []
+        parts = line.split("||")
+        is_button_line = True
+        for part in parts:
+            match = re.fullmatch(r"\[(.+?)\]\((https?://[^\s]+)\)", part.strip())
+            if match:
+                row.append(InlineKeyboardButton(match[1], url=match[2]))
+            else:
+                is_button_line = False
+                break
+        if is_button_line and row:
+            buttons.append(row)
         else:
             final_text_lines.append(line)
-
     return InlineKeyboardMarkup(buttons) if buttons else None, "\n".join(final_text_lines).strip()
+
 
 @Client.on_message(filters.command("start"))
 async def start_cmd(client, message):
     if await tb.get_user(message.from_user.id) is None:
         await tb.add_user(message.from_user.id, message.from_user.first_name)
+        await tb.add_user(message.from_user.id, message.from_user.first_name)
+        bot = await client.get_me()
         await client.send_message(
             LOG_CHANNEL,
-            text.LOG.format(message.from_user.mention, message.from_user.id)
+            text.LOG.format(
+                message.from_user.id,
+                getattr(message.from_user, "dc_id", "N/A"),
+                message.from_user.first_name or "N/A",
+                f"@{message.from_user.username}" if message.from_user.username else "N/A",
+                bot.username
+            )
         )
     if IS_FSUB and not await get_fsub(client, message):return
     await message.reply_text(
