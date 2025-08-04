@@ -31,6 +31,7 @@
 - `BOT_TOKEN` : Get From [BotFather](https://youtu.be/aJILCCXfNVM)
 - `DB_URI` : Mongodb [Database](https://youtu.be/j8LIuM7vv18)
 - `ADMIN` : Your Telegram ID.
+- `PICS` - Your bot start images (you can add multiple images)
 - `LOG_CHANNEL` : Log Channel ID.
 - `AUTH_CHANNELS` : Fsub Channel ID.
 
