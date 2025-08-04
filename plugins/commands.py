@@ -34,7 +34,6 @@ def parse_button_markup(text: str):
 async def start_cmd(client, message):
     if await tb.get_user(message.from_user.id) is None:
         await tb.add_user(message.from_user.id, message.from_user.first_name)
-        await tb.add_user(message.from_user.id, message.from_user.first_name)
         bot = await client.get_me()
         await client.send_message(
             LOG_CHANNEL,
